@@ -1,29 +1,38 @@
-num1 = int(input("numero 1: ")) 
-num2 = int(input("numero 2: ")) 
 
-valor = 0
 while True:
-    print("""seleccione opcion
+    print()
+    print("///Elige Primero los Numeros para las Operaciones///")
+    print("----------------------------------------------------")
+    print()
+    num1 = int(input("1er Numero: ")) 
+    num2 = int(input("2do Numero: "))
+     
+
+    print()
+    print("""Seleccione la operacion que desea
             1- Sumar 
             2- Restar
             3- Multiplicar
-            4- dividir 
+            4- Dividir
+            5- Salir 
         """)
 
     valor = int(input("Elige una opcion: ") )     
 
     if valor == 1:
-        print("la suma es",num1+num2)
-        break;
-    if valor == 2:
-        print("la resta es",num1-num2)
-        break;
-    if valor == 3:
-        print("la multiplicacion es",num1*num2)
-        break;
-    if valor == 4:
-        print("la division es",num1/num2)
-        break;
+        print("La suma es", num1 + num2)
+        
+    elif valor == 2:
+        print("La resta es", num1 - num2)
+        
+    elif valor == 3:
+        print("La multiplicacion es", num1 * num2)
+        
+    elif valor == 4:
+        print("La division es", num1 / num2)
+        
+    elif valor ==5:
+        print("Saliendo del programa")
+        break
     else:
-        print("Opcion incorrecta")
-        break;
+        print("Opcion incorrecta, por favor intente de nuevo.")
